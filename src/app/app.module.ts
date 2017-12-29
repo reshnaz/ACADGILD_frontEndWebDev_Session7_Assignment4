@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { changeColor } from './app.directive';
 
 
 @NgModule({
@@ -11,6 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule
+  ],
+  exports: [
+    changeColor
   ],
   providers: [],
   bootstrap: [AppComponent]
